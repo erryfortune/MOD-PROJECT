@@ -10,7 +10,11 @@
 </head>
 <body>
     
-
+<div>
+        <button class="start-button" onclick="startGame()">START GAME</button>
+</div>
+   
+    
     <div class="uss">
         <img src="./images/USS_Ship.png" id="uss-ship" alt="USS HelloWorld">
         <h1>USS HelloWorld</h1>
@@ -70,6 +74,13 @@
         </div>
     </section>
 </div>
+    
+    <div><button id="re-reset" class="hidden start-button" onclick="reload()">RESET</button></div>
+    
+    <div class="hidden reset">
+        <span id="result-message">YOU LOSE</span>
+        <button class="start-button" onclick="reload()">PLAY AGAIN</button>
+    </div>
     
 </body>
 </html>
