@@ -7,11 +7,10 @@ class Ship{
       this.accuracy = accuracy;
   }
 //create attack method    
+  
+ //if the accuracy  of the USS ship is greater than the accuracy of the enemy ship, 
+// it is a hit and hull is deducted
   attackShip(){
- 
-      //if the accuracy  of the USS ship is greater than the accuracy of the enemy ship, 
-  // it is a hit and hull is deducted
-     
   if(myShip.accuracy >= this.accuracy){
           console.log(myShip);
           this.hull -= myShip.firepower
